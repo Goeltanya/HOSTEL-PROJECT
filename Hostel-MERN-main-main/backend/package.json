@@ -1,0 +1,26 @@
+{
+    "name": "web",
+    "version": "1.0.0",
+    "description": "It is a MERN application built for Hostel Management System",
+    "main": "index.js",
+    "scripts": {
+      "client": "npm run dev --prefix client",
+      "server": "npm start --prefix backend",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "start": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@emailjs/browser": "^3.11.0",
+      "bcryptjs": "^2.4.3",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.7",
+      "email-js": "^2.0.2",
+      "express": "^4.21.2",
+      "express-validator": "^7.2.1",
+      "json2csv": "^6.0.0-alpha.2",
+      "jsonwebtoken": "^9.0.2",
+      "mongoose": "^8.9.5"
+    }
+  }
